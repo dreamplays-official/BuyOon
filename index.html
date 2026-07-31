@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark" data-theme="quantum-dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BuyOon Apex Multi-Verse OS | Sovereign Intelligence & Autonomous E-Commerce Infrastructure</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                animation: {
+                    'float-quantum': 'floatQuantum 5s ease-in-out infinite',
+                    'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+                    'viral-pop': 'viralPop 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate',
+                    'neon-pulse': 'neonPulse 2s ease-in-out infinite alternate',
+                },
+                keyframes: {
+                    floatQuantum: {
+                        '0%, 100%': { transform: 'translateY(0px)' },
+                        '50%': { transform: 'translateY(-14px)' },
+                    },
+                    pulseGlow: {
+                        '0%, 100%': { opacity: 0.4 },
+                        '50%': { opacity: 0.9 },
+                    },
+                    viralPop: {
+                        '0%': { transform: 'scale(0.94) translateY(0px)', filter: 'drop-shadow(0 0 10px rgba(0,242,254,0.3))' },
+                        '100%': { transform: 'scale(1.06) translateY(-6px)', filter: 'drop-shadow(0 0 35px var(--accent-primary))' },
+                    },
+                    neonPulse: {
+                        '0%': { opacity: '0.8', transform: 'scale(1)' },
+                        '100%': { opacity: '1', transform: 'scale(1.03)' }
+                    }
+                }
+            }
+        }
+    }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;800&family=Orbitron:wght@600;800;900&display=swap');
+
+    :root {
+        --bg-main: #010409;
+        --bg-glass: rgba(8, 15, 28, 0.88);
+        --bg-card: rgba(255, 255, 255, 0.018);
+        --border-color: rgba(0, 242, 254, 0.2);
+        --border-hover: rgba(0, 242, 254, 0.6);
+        --accent-primary: #00f2fe;
+        --accent-secondary: #4facfe;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --glow-shadow: rgba(0, 242, 254, 0.25);
+    }
+
+    [data-theme="quantum-dark"] {
+        --bg-main: #010409;
+        --bg-glass: rgba(8, 15, 28, 0.88);
+        --bg-card: rgba(255, 255, 255, 0.018);
+        --border-color: rgba(0, 242, 254, 0.2);
+        --border-hover: rgba(0, 242, 254, 0.6);
+        --accent-primary: #00f2fe;
+        --accent-secondary: #4facfe;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --glow-shadow: rgba(0, 242, 254, 0.25);
+    }
+
+    [data-theme="cyberpunk-neon"] {
+        --bg-main: #09000f;
+        --bg-glass: rgba(20, 5, 30, 0.92);
+        --bg-card: rgba(255, 0, 128, 0.025);
+        --border-color: rgba(255, 0, 127, 0.35);
+        --border-hover: rgba(255, 0, 127, 0.9);
+        --accent-primary: #ff007f;
+        --accent-secondary: #7928ca;
+        --text-main: #fff0f5;
+        --text-muted: #d8b4fe;
+        --glow-shadow: rgba(255, 0, 127, 0.4);
+    }
+
+    [data-theme="emerald-wealth"] {
+        --bg-main: #020b06;
+        --bg-glass: rgba(4, 20, 12, 0.92);
+        --bg-card: rgba(16, 185, 129, 0.025);
+        --border-color: rgba(16, 185, 129, 0.35);
+        --border-hover: rgba(16, 185, 129, 0.9);
+        --accent-primary: #10b981;
+        --accent-secondary: #059669;
+        --text-main: #ecfdf5;
+        --text-muted: #6ee7b7;
+        --glow-shadow: rgba(16, 185, 129, 0.35);
+    }
+
+    [data-theme="solar-gold"] {
+        --bg-main: #0c0802;
+        --bg-glass: rgba(24, 16, 4, 0.92);
+        --bg-card: rgba(245, 158, 11, 0.025);
+        --border-color: rgba(245, 158, 11, 0.35);
+        --border-hover: rgba(245, 158, 11, 0.9);
+        --accent-primary: #f59e0b;
+        --accent-secondary: #d97706;
+        --text-main: #fffbeb;
+        --text-muted: #fde68a;
+        --glow-shadow: rgba(245, 158, 11, 0.35);
+    }
+
+    [data-theme="pure-light"] {
+        --bg-main: #f8fafc;
+        --bg-glass: rgba(255, 255, 255, 0.92);
+        --bg-card: rgba(0, 0, 0, 0.02);
+        --border-color: rgba(0, 0, 0, 0.12);
+        --border-hover: rgba(2, 132, 199, 0.6);
+        --accent-primary: #0284c7;
+        --accent-secondary: #2563eb;
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --glow-shadow: rgba(2, 132, 199, 0.25);
+    }
+
+    [data-theme="midnight-purple"] {
+        --bg-main: #06020f;
+        --bg-glass: rgba(15, 8, 30, 0.92);
+        --bg-card: rgba(139, 92, 246, 0.025);
+        --border-color: rgba(139, 92, 246, 0.35);
+        --border-hover: rgba(139, 92, 246, 0.9);
+        --accent-primary: #8b5cf6;
+        --accent-secondary: #6d28d9;
+        --text-main: #f3e8ff;
+        --text-muted: #c4b5fd;
+        --glow-shadow: rgba(139, 92, 246, 0.4);
+    }
+
+    [data-theme="crimson-red"] {
+        --bg-main: #0d0202;
+        --bg-glass: rgba(30, 8, 8, 0.92);
+        --bg-card: rgba(239, 68, 68, 0.025);
+        --border-color: rgba(239, 68, 68, 0.35);
+        --border-hover: rgba(239, 68, 68, 0.9);
+        --accent-primary: #ef4444;
+        --accent-secondary: #b91c1c;
+        --text-main: #fef2f2;
+        --text-muted: #fca5a5;
+        --glow-shadow: rgba(239, 68, 68, 0.4);
+    }
+
+    [data-theme="ocean-sapphire"] {
+        --bg-main: #020712;
+        --bg-glass: rgba(6, 18, 38, 0.92);
+        --bg-card: rgba(59, 130, 246, 0.025);
+        --border-color: rgba(59, 130, 246, 0.35);
+        --border-hover: rgba(59, 130, 246, 0.9);
+        --accent-primary: #3b82f6;
+        --accent-secondary: #1d4ed8;
+        --text-main: #eff6ff;
+        --text-muted: #93c5fd;
+        --glow-shadow: rgba(59, 130, 246, 0.4);
+    }
+
+    [data-theme="matrix-terminal"] {
+        --bg-main: #020802;
+        --bg-glass: rgba(4, 18, 4, 0.95);
+        --bg-card: rgba(34, 197, 94, 0.03);
+        --border-color: rgba(34, 197, 94, 0.4);
+        --border-hover: rgba(34, 197, 94, 1);
+        --accent-primary: #22c55e;
+        --accent-secondary: #15803d;
+        --text-main: #f0fdf4;
+        --text-muted: #86efac;
+        --glow-shadow: rgba(34, 197, 94, 0.5);
+    }
+
+    [data-theme="sunset-amber"] {
+        --bg-main: #0f0502;
+        --bg-glass: rgba(35, 12, 6, 0.92);
+        --bg-card: rgba(249, 115, 22, 0.025);
+        --border-color: rgba(249, 115, 22, 0.35);
+        --border-hover: rgba(249, 115, 22, 0.9);
+        --accent-primary: #f97316;
+        --accent-secondary: #c2410c;
+        --text-main: #fff7ed;
+        --text-muted: #fdba74;
+        --glow-shadow: rgba(249, 115, 22, 0.4);
+    }
+
+    body { 
+        font-family: 'Plus Jakarta Sans', sans-serif; 
+        background-color: var(--bg-main); 
+        color: var(--text-main);
+        transition: background-color 0.4s ease, color 0.4s ease;
+    }
+    .font-mono-code { font-family: 'JetBrains Mono', monospace; }
+    .font-orbitron { font-family: 'Orbitron', sans-serif; }
+
+    .glass-quantum {
+        background: var(--bg-glass);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border-bottom: 1px solid var(--border-color);
+    }
+    .glass-card-apex {
+        background: var(--bg-card);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--border-color);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-apex:hover {
+        border-color: var(--border-hover);
+        box-shadow: 0 0 45px var(--glow-shadow);
+        transform: translateY(-8px);
+    }
+    .text-quantum-gradient {
+        background: linear-gradient(135deg, var(--text-main) 0%, var(--accent-primary) 50%, var(--accent-secondary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .accent-bg {
+        background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    }
+    .accent-text { color: var(--accent-primary); }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-main); }
+    ::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 4px; opacity: 0.8; }
+    
+    .page-section { display: none; }
+    .page-section.active-page { display: block; animation: fadeInPage 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+    @keyframes fadeInPage {
+        from { opacity: 0; transform: translateY(14px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body class="overflow-x-hidden antialiased selection:bg-[var(--accent-primary)] selection:text-black">
+
+    <!-- Top Sovereign Status Bar -->
+    <div class="bg-[#020610] border-b border-[var(--border-color)] py-2.5 px-6 text-xs font-mono-code tracking-widest uppercase flex flex-wrap justify-between items-center text-cyan-300">
+        <div class="flex items-center gap-3">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="text-white font-bold">GRID:</span> <span class="text-emerald-400">ACTIVE [OMNI-ENGINE + PRO FEATURES]</span>
+        </div>
+        <div class="flex items-center gap-4 flex-wrap">
+            <span class="hidden md:inline"><i class="fa-solid fa-shield-cat text-cyan-400 mr-1.5"></i> ARCHITECTS: YUGANK & ARNAV</span>
+            
+            <!-- Custom Accent Color Picker & 10 Themes -->
+            <div class="flex items-center gap-2 bg-slate-900 px-3 py-1.5 rounded-lg border border-[var(--border-color)] shadow-xl">
+                <i class="fa-solid fa-palette accent-text text-xs"></i>
+                <select id="themeSelector" onchange="switchTheme(this.value)" class="bg-transparent text-white text-[11px] font-mono-code outline-none cursor-pointer">
+                    <option value="quantum-dark" class="bg-slate-900 text-white">🌌 Quantum Dark</option>
+                    <option value="cyberpunk-neon" class="bg-slate-900 text-white">⚡ Cyberpunk Neon</option>
+                    <option value="emerald-wealth" class="bg-slate-900 text-white">💵 Emerald Wealth</option>
+                    <option value="solar-gold" class="bg-slate-900 text-white">☀️ Solar Gold</option>
+                    <option value="pure-light" class="bg-slate-900 text-white">💎 Pure Light</option>
+                    <option value="midnight-purple" class="bg-slate-900 text-white">🔮 Midnight Purple</option>
+                    <option value="crimson-red" class="bg-slate-900 text-white">🔥 Crimson Red</option>
+                    <option value="ocean-sapphire" class="bg-slate-900 text-white">🌊 Ocean Sapphire</option>
+                    <option value="matrix-terminal" class="bg-slate-900 text-white">💻 Matrix Terminal</option>
+                    <option value="sunset-amber" class="bg-slate-900 text-white">🌇 Sunset Amber</option>
+                </select>
+                <input type="color" id="customColorPicker" onchange="applyCustomColor(this.value)" title="Choose Custom Accent" class="w-5 h-5 bg-transparent border-0 cursor-pointer rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi-Page Navigation Header -->
+    <header class="sticky top-0 z-50 glass-quantum">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="#" onclick="navigateTo('home')" class="font-orbitron text-2xl sm:text-3xl font-black tracking-tighter text-white flex items-center gap-1.5">
+                    BuyOon<span class="accent-text">.</span><span class="text-xs font-mono-code uppercase px-2.5 py-1 rounded-md bg-[var(--border-color)] text-white">Back</span>
+                </a>
+            </div>
+
+            <nav class="hidden xl:flex items-center space-x-6 text-xs font-semibold font-orbitron tracking-wide">
+                <button onclick="navigateTo('home')" id="nav-home" class="nav-link accent-text transition-colors">Command Hub</button>
+                <button onclick="navigateTo('catalog')" id="nav-catalog" class="nav-link text-slate-300 hover:text-[var(--accent-primary)] transition-colors">Master Catalog</button>
+                <button onclick="navigateTo('compare')" id="nav-compare" class="nav-link text-slate-300 hover:text-[var(--accent-primary)] transition-colors">Compare</button>
+                <button onclick="navigateTo('wishlist')" id="nav-wishlist" class="nav-link text-slate-300 hover:text-[var(--accent-primary)] transition-colors">Wishlist (<span id="wishlistCountNav">0</span>)</button>
+                <button onclick="navigateTo('analytics')" id="nav-analytics" class="nav-link text-slate-300 hover:text-[var(--accent-primary)] transition-colors">Telemetry</button>
+                <button onclick="navigateTo('ai-engine')" id="nav-ai-engine" class="nav-link text-slate-300 hover:text-[var(--accent-primary)] transition-colors">AI Hub</button>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="navigateTo('login')" id="navHeaderLoginBtn" class="px-4 py-2 rounded-xl glass-card-apex text-white font-orbitron text-xs uppercase font-extrabold tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-user-lock accent-text"></i> <span id="headerLoginStatusText">Login</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= PAGE 1: COMMAND HUB (HOME) ================= -->
+    <section id="page-home" class="page-section active-page">
+        <div class="relative pt-24 pb-20 px-6">
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <div class="mb-6 flex justify-center gap-3 flex-wrap">
+                    <button onclick="navigateTo('catalog')" class="relative group overflow-hidden rounded-full p-[1px] font-orbitron text-xs uppercase font-extrabold shadow-2xl inline-flex">
+                        <span class="absolute inset-0 accent-bg rounded-full transition-all duration-300 group-hover:scale-105"></span>
+                        <span class="relative px-6 py-2.5 rounded-full bg-slate-950 text-white flex items-center gap-2">
+                            <span>Launch Deals</span>
+                            <i class="fa-solid fa-bolt text-amber-400"></i>
+                        </span>
+                    </button>
+                    <button onclick="navigateTo('compare')" class="px-6 py-2.5 rounded-full glass-card-apex text-white font-orbitron text-xs uppercase font-extrabold flex items-center gap-2">
+                        <span>Compare Products</span> <i class="fa-solid fa-scale-balanced accent-text"></i>
+                    </button>
+                </div>
+
+                <div class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass-card-apex text-xs font-mono-code uppercase tracking-widest mb-8 animate-float-quantum shadow-2xl">
+                    <i class="fa-solid fa-crown text-amber-400 text-sm"></i> Fully Loaded: Social Proof, Alerts & Wishlists
+                </div>
+                
+                <h1 class="text-6xl sm:text-9xl font-black tracking-tight mb-8 leading-[1.08] font-orbitron text-quantum-gradient animate-viral-pop inline-block cursor-pointer">
+                    BuyOon
+                </h1>
+
+                <p class="text-base sm:text-xl text-slate-400 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+                    Crafted by Yugank Vishnoi & Arnav Tyagi. Now upgraded with live social purchase popups, price drop alerts, and wishlists across curated categories.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button onclick="navigateTo('catalog')" class="w-full sm:w-auto px-8 py-4 rounded-xl accent-bg text-white font-orbitron text-xs uppercase font-extrabold tracking-wider shadow-2xl transition-all">
+                        Explore Master Catalog <i class="fa-solid fa-rocket ml-2"></i>
+                    </button>
+                    <button onclick="navigateTo('compare')" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card-apex text-slate-200 font-orbitron text-xs uppercase font-bold tracking-wider transition-all">
+                        Compare Specs <i class="fa-solid fa-scale-balanced ml-2 accent-text"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= TOP DEALS SECTION (HOME SCREEN) ================= -->
+            <div class="max-w-7xl mx-auto mt-24">
+                <div class="text-center mb-12">
+                    <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Featured Curated Collection</span>
+                    <h2 class="text-3xl sm:text-4xl font-black font-orbitron mt-1">🔥 Top Deals</h2>
+                    <p class="text-slate-400 text-sm mt-2 font-mono-code">Exclusive hand-picked offers integrated on your home screen[cite: 2, 4]</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                    <!-- Product 1 -->
+                    <div class="glass-card-apex rounded-2xl overflow-hidden flex flex-col justify-between p-4 shadow-xl text-center group">
+                        <div>
+                            <div class="relative h-[300px] overflow-hidden rounded-md mb-4 bg-slate-900">
+                                <img src="IMG-20260730-WA0038.jpg" alt="Boston Navy Blue T-Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-2 left-2 bg-red-600 text-white font-mono-code text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow-lg">HOT DEAL</span>
+                            </div>
+                            <div class="font-bold text-base mb-1 text-[var(--text-main)] line-clamp-1">Boston Navy Blue T-Shirt</div>
+                            <div class="font-bold text-base text-emerald-400 mb-4 font-mono-code">Rs. 298</div>
+                        </div>
+                        <div>
+                            <a href="https://bitli.in/HZymX3l" target="_blank" class="block bg-[#ff5722] hover:bg-[#e64a19] text-white py-2.5 px-5 rounded-xl font-bold text-xs uppercase font-orbitron transition-all shadow-lg text-decoration-none">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="glass-card-apex rounded-2xl overflow-hidden flex flex-col justify-between p-4 shadow-xl text-center group">
+                        <div>
+                            <div class="relative h-[300px] overflow-hidden rounded-md mb-4 bg-slate-900">
+                                <img src="IMG-20260730-WA0037.jpg" alt="Anime Wolf Design Black T-Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-2 left-2 bg-red-600 text-white font-mono-code text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow-lg">HOT DEAL</span>
+                            </div>
+                            <div class="font-bold text-base mb-1 text-[var(--text-main)] line-clamp-1">Anime Wolf Design Black T-Shirt</div>
+                            <div class="font-bold text-base text-emerald-400 mb-4 font-mono-code">Rs. 399</div>
+                        </div>
+                        <div>
+                            <a href="https://bitli.in/5fkeSyj" target="_blank" class="block bg-[#ff5722] hover:bg-[#e64a19] text-white py-2.5 px-5 rounded-xl font-bold text-xs uppercase font-orbitron transition-all shadow-lg text-decoration-none">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="glass-card-apex rounded-2xl overflow-hidden flex flex-col justify-between p-4 shadow-xl text-center group">
+                        <div>
+                            <div class="relative h-[300px] overflow-hidden rounded-md mb-4 bg-slate-900">
+                                <img src="IMG-20260730-WA0035.jpg" alt="Casual Solid/Textured Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-2 left-2 bg-red-600 text-white font-mono-code text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow-lg">HOT DEAL</span>
+                            </div>
+                            <div class="font-bold text-base mb-1 text-[var(--text-main)] line-clamp-1">Casual Solid/Textured Shirt</div>
+                            <div class="font-bold text-base text-emerald-400 mb-4 font-mono-code">Rs. 299</div>
+                        </div>
+                        <div>
+                            <a href="https://bitli.in/zlIU3Yq" target="_blank" class="block bg-[#ff5722] hover:bg-[#e64a19] text-white py-2.5 px-5 rounded-xl font-bold text-xs uppercase font-orbitron transition-all shadow-lg text-decoration-none">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="glass-card-apex rounded-2xl overflow-hidden flex flex-col justify-between p-4 shadow-xl text-center group">
+                        <div>
+                            <div class="relative h-[300px] overflow-hidden rounded-md mb-4 bg-slate-900">
+                                <img src="IMG-20260730-WA0036.jpg" alt="One Piece Luffy Black T-Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-2 left-2 bg-red-600 text-white font-mono-code text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow-lg">HOT DEAL</span>
+                            </div>
+                            <div class="font-bold text-base mb-1 text-[var(--text-main)] line-clamp-1">One Piece Luffy Black T-Shirt</div>
+                            <div class="font-bold text-base text-emerald-400 mb-4 font-mono-code">Rs. 244</div>
+                        </div>
+                        <div>
+                            <a href="https://bitli.in/5z5CGjH" target="_blank" class="block bg-[#ff5722] hover:bg-[#e64a19] text-white py-2.5 px-5 rounded-xl font-bold text-xs uppercase font-orbitron transition-all shadow-lg text-decoration-none">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Quick Grid Section -->
+            <div class="max-w-6xl mx-auto mt-20">
+                <div class="text-center mb-10">
+                    <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Explore By Category</span>
+                    <h3 class="text-2xl sm:text-3xl font-black font-orbitron mt-1">Sovereign Product Categories</h3>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 px-4">
+                    <div onclick="filterCatalog('Footwear')" class="glass-card-apex p-5 rounded-2xl text-center cursor-pointer group hover:bg-slate-900/50 transition-all">
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">👟</div>
+                        <div class="text-xs font-bold font-orbitron text-white">Footwear</div>
+                    </div>
+                    <div onclick="filterCatalog('Home & Kitchen')" class="glass-card-apex p-5 rounded-2xl text-center cursor-pointer group hover:bg-slate-900/50 transition-all">
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🍳</div>
+                        <div class="text-xs font-bold font-orbitron text-white">Home & Kitchen</div>
+                    </div>
+                    <div onclick="filterCatalog('Beauty & Skincare')" class="glass-card-apex p-5 rounded-2xl text-center cursor-pointer group hover:bg-slate-900/50 transition-all">
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">✨</div>
+                        <div class="text-xs font-bold font-orbitron text-white">Beauty & Skincare</div>
+                    </div>
+                    <div onclick="filterCatalog('Fashion')" class="glass-card-apex p-5 rounded-2xl text-center cursor-pointer group hover:bg-slate-900/50 transition-all">
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">👕</div>
+                        <div class="text-xs font-bold font-orbitron text-white">Fashion</div>
+                    </div>
+                    <div onclick="filterCatalog('Home Decor')" class="glass-card-apex p-5 rounded-2xl text-center cursor-pointer group hover:bg-slate-900/50 transition-all">
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🖼️</div>
+                        <div class="text-xs font-bold font-orbitron text-white">Home Decor</div>
+                    </div>
+                    <div onclick="filterCatalog('Electronics')" class="glass-card-apex p-5 rounded-2xl text-center cursor-pointer group hover:bg-slate-900/50 transition-all">
+                        <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">⚡</div>
+                        <div class="text-xs font-bold font-orbitron text-white">Electronics</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Drop Alerts Banner -->
+            <div class="max-w-5xl mx-auto mt-20 glass-card-apex p-8 rounded-3xl border border-[var(--border-color)] bg-gradient-to-r from-slate-950 via-cyan-950/20 to-slate-950">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 text-left">
+                        <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-mono-code uppercase"><i class="fa-solid fa-bell"></i> Feature Active</div>
+                        <h3 class="font-orbitron text-2xl font-bold">Set Instant Price Drop Alerts</h3>
+                        <p class="text-xs text-slate-400 max-w-xl">Never miss a discount. Enter your email to get instantly notified via automated webhook when prices plunge.</p>
+                    </div>
+                    <div class="w-full md:w-auto flex gap-2">
+                        <input type="email" id="quickAlertEmail" placeholder="Enter your email..." class="bg-slate-950 border border-[var(--border-color)] rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[var(--accent-primary)] font-mono-code">
+                        <button onclick="triggerPriceAlert()" class="accent-bg text-white font-orbitron text-xs font-bold uppercase px-6 py-3 rounded-xl shadow-lg cursor-pointer whitespace-nowrap">Set Alert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
+                <div class="glass-card-apex p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-black font-mono-code mb-1">6 Cat.</div>
+                    <div class="text-[11px] text-slate-400 font-mono-code uppercase tracking-widest">Expanded Inventory</div>
+                </div>
+                <div class="glass-card-apex p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-black font-mono-code accent-text mb-1">₹0.00</div>
+                    <div class="text-[11px] text-slate-400 font-mono-code uppercase tracking-widest">Extra Markup</div>
+                </div>
+                <div class="glass-card-apex p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-black font-mono-code text-emerald-400 mb-1">Live Sync</div>
+                    <div class="text-[11px] text-slate-400 font-mono-code uppercase tracking-widest">EarnKaro API</div>
+                </div>
+                <div class="glass-card-apex p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-black font-mono-code text-amber-400 mb-1">10 Themes</div>
+                    <div class="text-[11px] text-slate-400 font-mono-code uppercase tracking-widest">+ Custom Picker</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PAGE 2: MASTER CATALOG ================= -->
+    <section id="page-catalog" class="page-section py-20 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Priority Stock Stream</span>
+                <h2 class="text-3xl sm:text-4xl font-black font-orbitron mt-1">🔥 Sovereign Multi-Category Master Inventory</h2>
+            </div>
+            <p class="text-slate-400 text-sm mt-2 md:mt-0 font-mono-code">Browse items across all structured categories</p>
+        </div>
+
+        <!-- Category Filter Buttons Bar -->
+        <div class="flex flex-wrap gap-2 mb-12 pb-4 border-b border-white/10">
+            <button onclick="filterCatalog('All')" id="cat-btn-All" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-bold accent-bg text-white shadow-lg cursor-pointer transition-all">All Items</button>
+            <button onclick="filterCatalog('Footwear')" id="cat-btn-Footwear" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-semibold glass-card-apex text-slate-300 hover:text-white cursor-pointer transition-all">Footwear</button>
+            <button onclick="filterCatalog('Home & Kitchen')" id="cat-btn-Home & Kitchen" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-semibold glass-card-apex text-slate-300 hover:text-white cursor-pointer transition-all">Home & Kitchen</button>
+            <button onclick="filterCatalog('Beauty & Skincare')" id="cat-btn-Beauty & Skincare" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-semibold glass-card-apex text-slate-300 hover:text-white cursor-pointer transition-all">Beauty & Skincare</button>
+            <button onclick="filterCatalog('Fashion')" id="cat-btn-Fashion" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-semibold glass-card-apex text-slate-300 hover:text-white cursor-pointer transition-all">Fashion</button>
+            <button onclick="filterCatalog('Home Decor')" id="cat-btn-Home Decor" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-semibold glass-card-apex text-slate-300 hover:text-white cursor-pointer transition-all">Home Decor</button>
+            <button onclick="filterCatalog('Electronics')" id="cat-btn-Electronics" class="cat-filter-btn px-5 py-2 rounded-xl text-xs font-orbitron uppercase tracking-wider font-semibold glass-card-apex text-slate-300 hover:text-white cursor-pointer transition-all">Electronics</button>
+        </div>
+
+        <div id="catalogGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product 1: Fashion -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Fashion">
+                <button onclick="toggleWishlist('Boston Streetwear Oversized Navy T-Shirt', '₹499', 'IMG-20260730-WA0038.jpg', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden">
+                    <img src="IMG-20260730-WA0038.jpg" alt="Boston Oversized T-Shirt" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">61% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Fashion</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Boston Streetwear Oversized Navy T-Shirt</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹499</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹1,299</span>
+                    </div>
+                    <button onclick="handleProductPurchase('https://bitli.in/HZymX3l')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2: Fashion -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Fashion">
+                <button onclick="toggleWishlist('Anime Graphic Print Black Oversized Tee', '₹549', 'IMG-20260730-WA0037.jpg', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden">
+                    <img src="IMG-20260730-WA0037.jpg" alt="Anime Wolf Graphic Tee" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">63% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Fashion</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Anime Graphic Print Black Oversized Tee</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹549</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹1,499</span>
+                    </div>
+                    <button onclick="handleProductPurchase('https://bitli.in/5fkeSyj')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3: Footwear -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Footwear">
+                <button onclick="toggleWishlist('Apex Air-Cushion Running & Walking Sneakers', '₹1,199', '👟', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <div class="text-6xl group-hover:scale-125 transition-transform duration-500">👟</div>
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">55% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Footwear</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Apex Air-Cushion Running & Walking Sneakers</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹1,199</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹2,699</span>
+                    </div>
+                    <button onclick="handleProductPurchase('YAHAN_APNA_EARNKARO_LINK_DAALEIN')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4: Home & Kitchen -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Home & Kitchen">
+                <button onclick="toggleWishlist('Smart Stainless Steel Vacuum Insulated Flask', '₹699', '🍳', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <div class="text-6xl group-hover:scale-125 transition-transform duration-500">🍳</div>
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">50% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Home & Kitchen</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Smart Stainless Steel Vacuum Insulated Flask & Bottle</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹699</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹1,399</span>
+                    </div>
+                    <button onclick="handleProductPurchase('YAHAN_APNA_EARNKARO_LINK_DAALEIN')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5: Beauty & Skincare -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Beauty & Skincare">
+                <button onclick="toggleWishlist('Vitamin C Glowing Skincare & Serum Kit', '₹799', '✨', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <div class="text-6xl group-hover:scale-125 transition-transform duration-500">✨</div>
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">40% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Beauty & Skincare</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Vitamin C Glowing Skincare & Face Serum Kit</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹799</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹1,299</span>
+                    </div>
+                    <button onclick="handleProductPurchase('YAHAN_APNA_EARNKARO_LINK_DAALEIN')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 6: Home Decor -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Home Decor">
+                <button onclick="toggleWishlist('Minimalist LED Wall Art & Home Decor Lamp', '₹999', '🖼️', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <div class="text-6xl group-hover:scale-125 transition-transform duration-500">🖼️</div>
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">58% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Home Decor</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Minimalist LED Wall Art & Ambient Home Decor Lamp</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹999</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹2,399</span>
+                    </div>
+                    <button onclick="handleProductPurchase('YAHAN_APNA_EARNKARO_LINK_DAALEIN')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 7: Electronics -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Electronics">
+                <button onclick="toggleWishlist('Next-Gen Ultra Slim Laptop Cooling Pad & Hub', '₹1,299', '💻', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <div class="text-6xl group-hover:scale-125 transition-transform duration-500">💻</div>
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">45% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Electronics</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">Next-Gen Ultra Slim Laptop Cooling Pad & Hub</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹1,299</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹2,399</span>
+                    </div>
+                    <button onclick="handleProductPurchase('YAHAN_APNA_EARNKARO_LINK_DAALEIN')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 8: Electronics -->
+            <div class="product-card glass-card-apex rounded-2xl overflow-hidden flex flex-col group shadow-2xl relative" data-category="Electronics">
+                <button onclick="toggleWishlist('T-900 Ultra Smartwatch Series 8', '₹899', '⌚', this)" class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/70 backdrop-blur text-white flex items-center justify-center hover:bg-[var(--accent-primary)] hover:text-black transition-all cursor-pointer shadow-lg" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <div class="relative h-72 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <div class="text-6xl group-hover:scale-125 transition-transform duration-500">⌚</div>
+                    <span class="absolute top-3 left-3 bg-red-600 text-white font-mono-code text-xs font-extrabold px-3 py-1 rounded-full shadow-lg">70% OFF</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-[10px] font-mono-code uppercase tracking-widest accent-text mb-1">Electronics</span>
+                    <h3 class="font-bold text-base mb-4 line-clamp-2">T-900 Ultra Smartwatch Series 8 Bluetooth Calling</h3>
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-2xl font-black font-mono-code accent-text">₹899</span>
+                        <span class="text-sm text-slate-500 line-through font-semibold">₹2,999</span>
+                    </div>
+                    <button onclick="handleProductPurchase('YAHAN_APNA_EARNKARO_LINK_DAALEIN')" class="mt-auto block w-full accent-bg hover:opacity-90 text-white font-orbitron text-xs uppercase font-extrabold tracking-wider text-center py-3.5 rounded-xl transition-all shadow-xl cursor-pointer">
+                        Secure Deal <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PAGE 3: PRODUCT COMPARISON ================= -->
+    <section id="page-compare" class="page-section py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Comparison Engine</span>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron mt-2">Interactive Product Comparison Matrix</h2>
+            <p class="text-slate-400 text-sm mt-2">Compare specs and prices side-by-side to make the best purchase decision.</p>
+        </div>
+
+        <div class="glass-card-apex p-8 rounded-3xl space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-950 p-6 rounded-2xl border border-[var(--border-color)] space-y-4">
+                    <h3 class="font-orbitron font-bold text-sm accent-text">Select Product A</h3>
+                    <select id="compareProduct1" onchange="updateComparison()" class="w-full bg-slate-900 border border-[var(--border-color)] rounded-xl px-4 py-3 text-xs text-white font-mono-code outline-none">
+                        <option value="t900">T-900 Ultra Smartwatch</option>
+                        <option value="boston">Boston Oversized Navy Tee</option>
+                        <option value="sneakers">Apex Sneakers</option>
+                        <option value="skincare">Vitamin C Skincare Kit</option>
+                    </select>
+                    <div id="specBox1" class="space-y-2 text-xs font-mono-code pt-4 border-t border-white/10 text-slate-300">
+                        <p><strong>Price:</strong> ₹899</p>
+                        <p><strong>Category:</strong> Electronics</p>
+                        <p><strong>Rating:</strong> ⭐ 4.5 / 5.0</p>
+                        <p><strong>Discount:</strong> 70% OFF</p>
+                        <p><strong>Platform:</strong> Flipkart Verified</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center justify-center text-center p-4">
+                    <div class="w-16 h-16 rounded-full accent-bg flex items-center justify-center text-white text-xl font-bold shadow-2xl mb-2">VS</div>
+                    <span class="font-mono-code text-xs text-slate-400">Autonomous Spec Matcher</span>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-2xl border border-[var(--border-color)] space-y-4">
+                    <h3 class="font-orbitron font-bold text-sm accent-text">Select Product B</h3>
+                    <select id="compareProduct2" onchange="updateComparison()" class="w-full bg-slate-900 border border-[var(--border-color)] rounded-xl px-4 py-3 text-xs text-white font-mono-code outline-none">
+                        <option value="boston" selected>Boston Oversized Navy Tee</option>
+                        <option value="t900">T-900 Ultra Smartwatch</option>
+                        <option value="sneakers">Apex Sneakers</option>
+                        <option value="skincare">Vitamin C Skincare Kit</option>
+                    </select>
+                    <div id="specBox2" class="space-y-2 text-xs font-mono-code pt-4 border-t border-white/10 text-slate-300">
+                        <p><strong>Price:</strong> ₹499</p>
+                        <p><strong>Category:</strong> Fashion</p>
+                        <p><strong>Rating:</strong> ⭐ 4.7 / 5.0</p>
+                        <p><strong>Discount:</strong> 61% OFF</p>
+                        <p><strong>Platform:</strong> Amazon Verified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PAGE 4: USER WISHLIST ================= -->
+    <section id="page-wishlist" class="page-section py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Saved Deals</span>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron mt-2">Your Saved Wishlist Deals</h2>
+            <p class="text-slate-400 text-sm mt-2">Quickly access products you've saved for later.</p>
+        </div>
+
+        <div id="wishlistContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div id="emptyWishlistMsg" class="col-span-full text-center py-16 text-slate-500 font-mono-code text-sm">
+                <i class="fa-solid fa-heart-crack text-3xl mb-3 opacity-40"></i>
+                <p>Your wishlist is currently empty. Click the heart icon on any product in the Master Catalog to save it here!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PAGE 5: LIVE TELEMETRY ================= -->
+    <section id="page-analytics" class="page-section py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Real-Time Data Streams</span>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron mt-2">Quantum Telemetry & Node Statistics</h2>
+            <p class="text-slate-400 text-sm mt-2">Live monitoring of affiliate API ping rates and global click-through metrics.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="glass-card-apex p-8 rounded-2xl">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-sm font-bold font-orbitron">API Gateway Latency</span>
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-mono-code">Optimal</span>
+                </div>
+                <div class="text-4xl font-black font-mono-code mb-2">10.4 ms</div>
+                <p class="text-xs text-slate-400">Direct routed fiber optic exchange across New Delhi & Mumbai nodes.</p>
+            </div>
+            <div class="glass-card-apex p-8 rounded-2xl">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-sm font-bold font-orbitron">Active Shoppers</span>
+                    <span class="px-3 py-1 rounded-full accent-bg text-white text-xs font-mono-code">Surging</span>
+                </div>
+                <div class="text-4xl font-black font-mono-code mb-2">58,910</div>
+                <p class="text-xs text-slate-400">Concurrent users utilizing pro features and discount pipelines.</p>
+            </div>
+            <div class="glass-card-apex p-8 rounded-2xl">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-sm font-bold font-orbitron">EarnKaro Pipeline Status</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--border-color)] text-white text-xs font-mono-code">Verified</span>
+                </div>
+                <div class="text-4xl font-black font-mono-code mb-2">100% Sync</div>
+                <p class="text-xs text-slate-400">Zero packet loss recorded across affiliate tracking relays.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PAGE 6: AI NEURAL HUB ================= -->
+    <section id="page-ai-engine" class="page-section py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="accent-text font-mono-code text-xs uppercase tracking-widest">Autonomous Intelligence</span>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron mt-2">Apex AI Price Prediction Engine</h2>
+            <p class="text-slate-400 text-sm mt-2">Test the neural network query analyzer for real-time bargain detection.</p>
+        </div>
+
+        <div class="glass-card-apex p-8 rounded-3xl shadow-2xl">
+            <div class="mb-6">
+                <label class="block text-xs font-mono-code uppercase tracking-widest mb-2 text-slate-300">Enter Product URL or Keyword for AI Analysis:</label>
+                <div class="flex gap-4">
+                    <input type="text" placeholder="e.g. Apex Sneakers or Vitamin C Serum..." class="flex-grow bg-slate-950 border border-[var(--border-color)] rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[var(--accent-primary)] font-mono-code">
+                    <button onclick="runAiAnalysis(this)" class="accent-bg text-white font-orbitron text-xs font-bold uppercase px-8 py-3 rounded-xl transition-all shadow-lg cursor-pointer">Run Analysis</button>
+                </div>
+            </div>
+            <div id="aiResultBox" class="hidden bg-slate-950/90 border border-[var(--border-color)] rounded-2xl p-6 font-mono-code text-xs text-slate-300 space-y-3">
+                <div class="flex items-center gap-2 text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> Neural Audit Complete</div>
+                <p>➔ Lowest historical price detected across Amazon & Flipkart.</p>
+                <p>➔ EarnKaro affiliate link verified: No extra markup added.</p>
+                <p>➔ Recommended Action: <span class="accent-text font-bold">Secure Deal Immediately (High Demand)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SUB-PAGES (About, Privacy, Terms, Contact, Login) ================= -->
+    <section id="page-about" class="page-section py-20 px-6 max-w-4xl mx-auto">
+        <div class="mb-8"><button onclick="navigateTo('home')" class="glass-card-apex px-5 py-2.5 rounded-xl font-orbitron text-xs uppercase font-bold tracking-wider text-cyan-300 hover:text-white flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-arrow-left"></i> Back to Command Hub</button></div>
+        <div class="glass-card-apex p-10 rounded-3xl space-y-6 shadow-2xl">
+            <div class="inline-block px-4 py-1.5 rounded-full accent-bg text-white text-xs font-mono-code uppercase tracking-widest">Sovereign Profile</div>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron text-quantum-gradient">About BuyOon Apex Ecosystem</h2>
+            <div class="text-slate-300 text-sm space-y-4 leading-relaxed font-medium">
+                <p>BuyOon Apex Ecosystem is engineered by <strong>Yugank Vishnoi & Arnav Tyagi</strong>. We provide autonomous multi-theme discount tracking and verified e-commerce pathways across Footwear, Home & Kitchen, Beauty & Skincare, Fashion, and Home Decor at absolute zero extra markup cost.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-privacy" class="page-section py-20 px-6 max-w-4xl mx-auto">
+        <div class="mb-8"><button onclick="navigateTo('home')" class="glass-card-apex px-5 py-2.5 rounded-xl font-orbitron text-xs uppercase font-bold tracking-wider text-cyan-300 hover:text-white flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-arrow-left"></i> Back to Command Hub</button></div>
+        <div class="glass-card-apex p-10 rounded-3xl space-y-6 shadow-2xl">
+            <div class="inline-block px-4 py-1.5 rounded-full accent-bg text-white text-xs font-mono-code uppercase tracking-widest">Security Framework</div>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron text-quantum-gradient">Privacy Policy</h2>
+            <div class="text-slate-300 text-sm space-y-4 leading-relaxed font-medium">
+                <p>Your privacy is fully safeguarded under military-grade security protocols. We collect minimal telemetry data strictly for price alert webhooks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-terms" class="page-section py-20 px-6 max-w-4xl mx-auto">
+        <div class="mb-8"><button onclick="navigateTo('home')" class="glass-card-apex px-5 py-2.5 rounded-xl font-orbitron text-xs uppercase font-bold tracking-wider text-cyan-300 hover:text-white flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-arrow-left"></i> Back to Command Hub</button></div>
+        <div class="glass-card-apex p-10 rounded-3xl space-y-6 shadow-2xl">
+            <div class="inline-block px-4 py-1.5 rounded-full accent-bg text-white text-xs font-mono-code uppercase tracking-widest">Legal Governance</div>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron text-quantum-gradient">Terms & Conditions</h2>
+            <div class="text-slate-300 text-sm space-y-4 leading-relaxed font-medium">
+                <p>All interface structures, feature scripts, and algorithmic code assets remain the exclusive intellectual property of <strong>Yugank Vishnoi and Arnav Tyagi</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-contact" class="page-section py-20 px-6 max-w-4xl mx-auto">
+        <div class="mb-8"><button onclick="navigateTo('home')" class="glass-card-apex px-5 py-2.5 rounded-xl font-orbitron text-xs uppercase font-bold tracking-wider text-cyan-300 hover:text-white flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-arrow-left"></i> Back to Command Hub</button></div>
+        <div class="glass-card-apex p-10 rounded-3xl space-y-6 shadow-2xl">
+            <div class="inline-block px-4 py-1.5 rounded-full accent-bg text-white text-xs font-mono-code uppercase tracking-widest">Direct Support</div>
+            <h2 class="text-3xl sm:text-4xl font-black font-orbitron text-quantum-gradient">Contact Us</h2>
+            <div class="text-slate-300 text-sm space-y-4 leading-relaxed font-medium">
+                <div class="space-y-3 pt-2 font-mono-code text-xs">
+                    <div class="p-4 rounded-xl bg-slate-950/80 border border-[var(--border-color)] flex items-center justify-between">
+                        <span class="text-slate-400">Primary Support:</span>
+                        <a href="mailto:dreamplaysoffficial01@gmail.com" class="accent-text font-bold hover:underline">dreamplaysoffficial01@gmail.com</a>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-950/80 border border-[var(--border-color)] flex items-center justify-between">
+                        <span class="text-slate-400">Secondary Support:</span>
+                        <a href="mailto:dreamplaysofficial02@gmail.com" class="accent-text font-bold hover:underline">dreamplaysofficial02@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-login" class="page-section py-20 px-6 max-w-xl mx-auto">
+        <div class="mb-8"><button onclick="navigateTo('home')" class="glass-card-apex px-5 py-2.5 rounded-xl font-orbitron text-xs uppercase font-bold tracking-wider text-cyan-300 hover:text-white flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-arrow-left"></i> Back to Command Hub</button></div>
+        <div class="glass-card-apex p-10 rounded-3xl space-y-6 shadow-2xl text-center">
+            <div class="inline-block px-4 py-1.5 rounded-full accent-bg text-white text-xs font-mono-code uppercase tracking-widest">Authentication Gateway</div>
+            <h2 class="text-3xl font-black font-orbitron text-quantum-gradient">Account Login</h2>
+            <div id="loggedOutView" class="space-y-5 pt-4">
+                <button onclick="simulateGoogleLogin()" class="w-full py-4 rounded-xl bg-white text-slate-900 font-bold text-sm flex items-center justify-center gap-3 shadow-lg hover:bg-slate-100 transition-all cursor-pointer">
+                    <i class="fa-brands fa-google text-red-500 text-lg"></i> Sign in with Google
+                </button>
+                <form onsubmit="handleManualLogin(event)" class="space-y-4 text-left font-mono-code text-xs">
+                    <div>
+                        <label class="block text-slate-400 mb-1.5 uppercase text-[10px]">Email Address</label>
+                        <input type="email" id="loginEmailInput" required placeholder="user@domain.com" class="w-full bg-slate-950 border border-[var(--border-color)] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[var(--accent-primary)]">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 mb-1.5 uppercase text-[10px]">Access Password</label>
+                        <input type="password" id="loginPassInput" required placeholder="••••••••" class="w-full bg-slate-950 border border-[var(--border-color)] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[var(--accent-primary)]">
+                    </div>
+                    <button type="submit" class="w-full accent-bg text-white font-orbitron text-xs font-bold uppercase py-3.5 rounded-xl transition-all shadow-xl cursor-pointer mt-2">Authorize Login</button>
+                </form>
+            </div>
+            <div id="loggedInView" class="hidden space-y-6 pt-4">
+                <div class="p-6 rounded-2xl bg-slate-950 border border-[var(--border-color)] space-y-3 font-mono-code text-xs">
+                    <div class="w-12 h-12 rounded-full accent-bg mx-auto flex items-center justify-center text-white text-xl font-bold shadow-lg"><i class="fa-solid fa-user-check"></i></div>
+                    <p class="text-emerald-400 font-bold text-sm">Authentication Successful!</p>
+                    <p id="activeUserDisplay" class="accent-text font-bold truncate"></p>
+                </div>
+                <button onclick="handleLogout()" class="w-full py-3.5 rounded-xl bg-red-500/20 text-red-400 border border-red-500/40 font-orbitron text-xs font-bold uppercase tracking-wider hover:bg-red-500/30 transition-all cursor-pointer">Sign Out</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sovereign Footer -->
+    <footer class="bg-slate-950 border-t border-[var(--border-color)] py-16 px-6 mt-20">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 pb-12 border-b border-white/5 text-left">
+                <div class="space-y-3 cursor-pointer group" onclick="navigateTo('about')"><h3 class="font-orbitron font-bold text-base text-white uppercase tracking-wider group-hover:text-[var(--accent-primary)] transition-colors flex items-center justify-between"><span>About Us</span><i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></h3></div>
+                <div class="space-y-3 cursor-pointer group" onclick="navigateTo('privacy')"><h3 class="font-orbitron font-bold text-base text-white uppercase tracking-wider group-hover:text-[var(--accent-primary)] transition-colors flex items-center justify-between"><span>Privacy Policy</span><i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></h3></div>
+                <div class="space-y-3 cursor-pointer group" onclick="navigateTo('terms')"><h3 class="font-orbitron font-bold text-base text-white uppercase tracking-wider group-hover:text-[var(--accent-primary)] transition-colors flex items-center justify-between"><span>Terms & Conditions</span><i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></h3></div>
+                <div class="space-y-3 cursor-pointer group" onclick="navigateTo('contact')"><h3 class="font-orbitron font-bold text-base text-white uppercase tracking-wider group-hover:text-[var(--accent-primary)] transition-colors flex items-center justify-between"><span>Contact Us</span><i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></h3></div>
+                <div class="space-y-3 cursor-pointer group" onclick="navigateTo('login')"><h3 class="font-orbitron font-bold text-base text-white uppercase tracking-wider group-hover:text-[var(--accent-primary)] transition-colors flex items-center justify-between"><span>Login</span><i class="fa-solid fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i></h3></div>
+            </div>
+            <div class="text-center space-y-6">
+                <div class="font-orbitron text-3xl font-black tracking-tight text-white">BuyOon<span class="accent-text">.</span></div>
+                <p class="text-sm text-slate-400 max-w-lg mx-auto leading-relaxed">World No. 1 Sovereign Deal & Affiliate Distribution Platform by Yugank Vishnoi & Arnav Tyagi.</p>
+                <div class="flex justify-center space-x-6 text-slate-400 text-lg pt-2">
+                    <a href="https://www.instagram.com/_.unfiltered._yugank?igsh=ODRpcmcybnZuc3l0" target="_blank" class="hover:text-[var(--accent-primary)] transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ArtYugank" target="_blank" class="hover:text-[var(--accent-primary)] transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <p class="text-xs text-slate-600 font-mono-code pt-6 border-t border-white/5">&copy; 2026 Yugank Vishnoi & Arnav Tyagi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- All Combined JavaScript Core Engine -->
+    <script>
+        let isLoggedIn = false;
+        let activeUserEmail = '';
+        let pendingPurchaseUrl = '';
+        let wishlistItems = [];
+
+        function navigateTo(pageId) {
+            document.querySelectorAll('.page-section').forEach(section => section.classList.remove('active-page'));
+            const target = document.getElementById('page-' + pageId);
+            if (target) target.classList.add('active-page');
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('font-bold', 'accent-text');
+                link.classList.add('text-slate-300');
+            });
+            const activeNav = document.getElementById('nav-' + pageId);
+            if (activeNav) {
+                activeNav.classList.remove('text-slate-300');
+                activeNav.classList.add('font-bold', 'accent-text');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function switchTheme(themeName) {
+            document.documentElement.setAttribute('data-theme', themeName);
+            localStorage.setItem('buyoon_theme_10', themeName);
+        }
+
+        function applyCustomColor(colorHex) {
+            document.documentElement.style.setProperty('--accent-primary', colorHex);
+            document.documentElement.style.setProperty('--accent-secondary', colorHex);
+            localStorage.setItem('buyoon_custom_accent', colorHex);
+        }
+
+        function triggerPriceAlert() {
+            const email = document.getElementById('quickAlertEmail').value;
+            if(!email || !email.includes('@')) {
+                alert('Please enter a valid email address to set price alerts.');
+                return;
+            }
+            alert('Success! Price drop alert webhook registered for: ' + email);
+            document.getElementById('quickAlertEmail').value = '';
+        }
+
+        const productSpecs = {
+            t900: { name: 'T-900 Ultra Smartwatch', price: '₹899', cat: 'Electronics', rating: '⭐ 4.5 / 5.0', discount: '70% OFF', platform: 'Flipkart Verified' },
+            boston: { name: 'Boston Oversized Navy Tee', price: '₹499', cat: 'Fashion', rating: '⭐ 4.7 / 5.0', discount: '61% OFF', platform: 'Amazon Verified' },
+            sneakers: { name: 'Apex Air-Cushion Running Sneakers', price: '₹1,199', cat: 'Footwear', rating: '⭐ 4.6 / 5.0', discount: '55% OFF', platform: 'Amazon Verified' },
+            skincare: { name: 'Vitamin C Glowing Skincare Kit', price: '₹799', cat: 'Beauty & Skincare', rating: '⭐ 4.8 / 5.0', discount: '40% OFF', platform: 'Flipkart Verified' }
+        };
+
+        function updateComparison() {
+            const p1Key = document.getElementById('compareProduct1').value;
+            const p2Key = document.getElementById('compareProduct2').value;
+            const s1 = productSpecs[p1Key];
+            const s2 = productSpecs[p2Key];
+
+            document.getElementById('specBox1').innerHTML = `<p><strong>Name:</strong> ${s1.name}</p><p><strong>Price:</strong> ${s1.price}</p><p><strong>Category:</strong> ${s1.cat}</p><p><strong>Rating:</strong> ${s1.rating}</p><p><strong>Discount:</strong> ${s1.discount}</p><p><strong>Platform:</strong> ${s1.platform}</p>`;
+            document.getElementById('specBox2').innerHTML = `<p><strong>Name:</strong> ${s2.name}</p><p><strong>Price:</strong> ${s2.price}</p><p><strong>Category:</strong> ${s2.cat}</p><p><strong>Rating:</strong> ${s2.rating}</p><p><strong>Discount:</strong> ${s2.discount}</p><p><strong>Platform:</strong> ${s2.platform}</p>`;
+        }
+
+        function filterCatalog(categoryName) {
+            navigateTo('catalog');
+            document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+                btn.classList.remove('accent-bg', 'text-white', 'font-bold');
+                btn.classList.add('glass-card-apex', 'text-slate-300', 'font-semibold');
+            });
+            const activeBtn = document.getElementById('cat-btn-' + categoryName);
+            if(activeBtn) {
+                activeBtn.classList.remove('glass-card-apex', 'text-slate-300', 'font-semibold');
+                activeBtn.classList.add('accent-bg', 'text-white', 'font-bold');
+            }
+
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if(categoryName === 'All' || cardCat === categoryName) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleWishlist(name, price, imgSource, btnElem) {
+            const existingIndex = wishlistItems.findIndex(item => item.name === name);
+            if(existingIndex > -1) {
+                wishlistItems.splice(existingIndex, 1);
+                btnElem.style.color = '#fff';
+                alert('Removed from your Wishlist.');
+            } else {
+                wishlistItems.push({ name, price, imgSource });
+                btnElem.style.color = 'var(--accent-primary)';
+                alert('Added to your Wishlist successfully!');
+            }
+            document.getElementById('wishlistCountNav').innerText = wishlistItems.length;
+            renderWishlistPage();
+        }
+
+        function renderWishlistPage() {
+            const container = document.getElementById('wishlistContainer');
+            if(wishlistItems.length === 0) {
+                container.innerHTML = `<div id="emptyWishlistMsg" class="col-span-full text-center py-16 text-slate-500 font-mono-code text-sm"><i class="fa-solid fa-heart-crack text-3xl mb-3 opacity-40"></i><p>Your wishlist is currently empty. Click the heart icon on any product in the Master Catalog to save it here!</p></div>`;
+                return;
+            }
+            let html = '';
+            wishlistItems.forEach((item, idx) => {
+                html += `<div class="glass-card-apex p-6 rounded-2xl flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-14 h-14 rounded-xl bg-slate-900 flex items-center justify-center text-2xl overflow-hidden">${item.imgSource.includes('.') ? `<img src="${item.imgSource}" class="w-full h-full object-cover">` : item.imgSource}</div><div><h4 class="font-bold text-sm line-clamp-1">${item.name}</h4><p class="accent-text font-mono-code font-bold text-sm mt-1">${item.price}</p></div></div><button onclick="removeWishlistItem(${idx})" class="text-red-400 hover:text-red-300 p-2 cursor-pointer"><i class="fa-solid fa-trash-can text-sm"></i></button></div>`;
+            });
+            container.innerHTML = html;
+        }
+
+        function removeWishlistItem(idx) {
+            wishlistItems.splice(idx, 1);
+            document.getElementById('wishlistCountNav').innerText = wishlistItems.length;
+            renderWishlistPage();
+        }
+
+        function runAiAnalysis(btn) {
+            btn.innerHTML = 'Analyzing...';
+            setTimeout(() => {
+                document.getElementById('aiResultBox').classList.remove('hidden');
+                btn.innerHTML = 'Run Analysis';
+            }, 800);
+        }
+
+        function handleProductPurchase(targetUrl) {
+            if (!isLoggedIn) {
+                pendingPurchaseUrl = targetUrl;
+                alert('Please login first to purchase or secure this product!');
+                navigateTo('login');
+            } else {
+                window.open(targetUrl, '_blank');
+            }
+        }
+
+        function simulateGoogleLogin() {
+            activeUserEmail = 'google_user_' + Math.floor(Math.random() * 9000 + 1000) + '@gmail.com';
+            completeLogin(activeUserEmail);
+        }
+
+        function handleManualLogin(event) {
+            event.preventDefault();
+            const emailVal = document.getElementById('loginEmailInput').value;
+            if (emailVal) completeLogin(emailVal);
+        }
+
+        function completeLogin(email) {
+            isLoggedIn = true;
+            document.getElementById('loggedOutView').classList.add('hidden');
+            document.getElementById('loggedInView').classList.remove('hidden');
+            document.getElementById('activeUserDisplay').innerText = email;
+            document.getElementById('headerLoginStatusText').innerText = 'Account';
+            alert('Login successful! Welcome, ' + email);
+            if (pendingPurchaseUrl) {
+                const urlToGo = pendingPurchaseUrl;
+                pendingPurchaseUrl = '';
+                window.open(urlToGo, '_blank');
+            } else {
+                navigateTo('home');
+            }
+        }
+
+        function handleLogout() {
+            isLoggedIn = false;
+            activeUserEmail = '';
+            pendingPurchaseUrl = '';
+            document.getElementById('loggedInView').classList.add('hidden');
+            document.getElementById('loggedOutView').classList.remove('hidden');
+            document.getElementById('headerLoginStatusText').innerText = 'Login';
+            alert('Signed out successfully.');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('buyoon_theme_10');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                document.getElementById('themeSelector').value = savedTheme;
+            }
+            const savedAccent = localStorage.getItem('buyoon_custom_accent');
+            if(savedAccent) {
+                document.documentElement.style.setProperty('--accent-primary', savedAccent);
+                document.documentElement.style.setProperty('--accent-secondary', savedAccent);
+                document.getElementById('customColorPicker').value = savedAccent;
+            }
+        });
+    </script>
+</body>
+</html>
